@@ -10,7 +10,7 @@ while True:
     second_number = input("Please enter your second number.").upper().replace(" ", "")
     chosen_operation = input("Press 1 if you want to ADD the variables. Press 2 to SUBTRACT. Press 3 to MULTIPLY. Or press 4 to DIVIDE").upper().replace(" ", "")
     if chosen_operation == 1:
-        print("")
+        print ("The sum is" + {first_number} + {second_number})
         #input code for addition
     elif chosen_operation == 2:
         print("")
