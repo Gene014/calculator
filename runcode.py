@@ -6,7 +6,7 @@ while True:
         # Ask the user to input his name 
         username=input(f"Hi, Good day! Please enter your name.")
         if username.isnumeric():
-                raise TypeError ("ayusin ang type haha")
+            raise TypeError
         # Ask the user what kind of mathematical operation it would used. 
         print("Welcome to your Virtual Calculator! Enter the numbers and I'll solve it for you!")
         first_number = int(input("Please enter your first number."))
@@ -26,7 +26,7 @@ while True:
             print(f"Hey {username}! The quotient for your problem is {first_number / second_number}")
         # wrong input
         else:
-                raise TypeError ("INVALID SYSNTAX, PLEASE TRY AGAIN! ")
+            raise ValueError
         askyesno = input("\n\33[36mDo you still want to continue? (yes/no):\33[0m ")
         if askyesno.lower() == 'no':
             print("\33[41mTerminating Program... ")
@@ -34,10 +34,10 @@ while True:
         elif askyesno.lower() == 'yes':
             continue
         else:
-            print("ngek")    
+            raise TypeError
     except TypeError:
-        print("Numbers aren't allowed, Please check your typings! ")
+        print("Please check your typings to avoid errors! ")
     except ValueError:
-        print("ngek hahaha")
+        print("Numbers Only!")
     except ZeroDivisionError:
-        print("anubayan hahaha")
+        print("Undefined! Please Try Again!")
