@@ -9,8 +9,8 @@ while True:
             raise TypeError
             # ask the user for the given. 
         print(f"\n\33[35mWelcome to your Virtual Calculator {username} ! Enter the numbers and I'll solve it for you!\33[35m")
-        first_number = int(input("\n\33[96mPlease enter your first number.\33[96m" ))
-        second_number = int(input("\n\33[90mPlease enter your second number. "))
+        first_number = float(input("\n\33[96mPlease enter your first number.\33[96m" ))
+        second_number = float(input("\n\33[90mPlease enter your second number. "))
             # ask the operation to be used
         chosen_operation = input("\n\33[1mPress \33[32m1\33[0m\33[1m if you want to \33[32mADD\33[0m\33[1m the variables. Press \33[32m2\33[0m\33[1m to \33[32mSUBTRACT\33[0m\33[1m. Press \33[32m3\33[0m\33[1m to \33[32mMULTIPLY\33[0m\33[1m. Or press \33[32m4\33[0m\33[1m to \33[32mDIVIDE\33[0m\33[1m. ")
             #input code for addition
